@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sort/terms",
+    "pages/sort/dynasty",
+    "pages/sort/author",
+    "pages/poem/poem"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sort/terms",
+        "text": "年级"
+      },
+      {
+        "pagePath": "pages/sort/dynasty",
+        "text": "朝代"
+      },
+      {
+        "pagePath": "pages/sort/author",
+        "text": "作者"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小学生诗词",
+    "navigationBarTextStyle": "black"
+  }
+}
