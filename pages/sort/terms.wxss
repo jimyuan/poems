@@ -1,1 +1,13 @@
 /* pages/sort/terms.wxss */
+.btn-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  display: inline-block;
+  width: 40%;
+  margin-top: 1em;
+}

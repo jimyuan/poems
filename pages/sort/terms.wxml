@@ -1,2 +1,8 @@
 <!--pages/sort/terms.wxml-->
-<text>pages/sort/terms.wxml</text>
+<view class='container'>
+  <view class='btn-group'>
+    <button type='primary' wx:for="{{terms}}" wx:key="{{index}}">
+      {{item}}
+    </button>
+  </view>
+</view>
