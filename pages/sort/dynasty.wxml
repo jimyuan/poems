@@ -1,2 +1,4 @@
 <!--pages/sort/dynasty.wxml-->
-<text>pages/sort/dynasty.wxml</text>
+<view class='container'>
+111
+</view>

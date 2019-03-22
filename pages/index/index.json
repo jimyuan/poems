@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "poem": "/component/poem/index" 
+  },
   "disableScroll": true
 }

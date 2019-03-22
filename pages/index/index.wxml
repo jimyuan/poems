@@ -1,7 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <text class="poem-title">{{poem[1]}}</text>
-  <text class="poem-suffix">{{poem[2]}} · {{poem[3]}}</text>
-  <text class="poem-body">{{poem[4]}}</text>
+  <poem data="{{poem}}"></poem>
   <button type="primary" class="pick-poem" bindtap="showPoem">换一首</button>
 </view>

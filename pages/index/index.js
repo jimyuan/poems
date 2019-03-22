@@ -1,7 +1,9 @@
 //index.js
 //获取应用实例
 const app = getApp()
-const poemDB = app.globalData.poems
+const poemDB = app.globalData.poems.sort((a, b) => {
+  return Math.random() > 0.5 ? -1 : 1
+})
 
 Page({
   data: {

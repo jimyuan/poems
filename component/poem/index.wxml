@@ -1,0 +1,6 @@
+<!--comonent/poem/index.wxml-->
+<view class='poem-body'>
+    <text class="poem-title">{{data[1]}}</text>
+    <text class="poem-suffix">{{data[2]}} · {{data[3]}}</text>
+    <text class="poem-body">{{data[4]}}</text>
+</view>
