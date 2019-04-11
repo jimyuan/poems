@@ -31,5 +31,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小学生诗词",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

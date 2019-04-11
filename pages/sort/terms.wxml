@@ -1,7 +1,18 @@
 <!--pages/sort/terms.wxml-->
+<wxs module="sort">
+  var getTerms = function (terms) {
+    var grade = ['一', '二', '三', '四', '五']
+    var term = ['上', '下']
+    return terms.map(function(item, idx){
+      return grade[idx / 2 | 0] + '年级' + term[idx & 1]
+    })
+  }
+  module.exports.getTerms = getTerms
+</wxs>
+
 <view class='container'>
   <view class='btn-group'>
-    <button type='primary' wx:for="{{terms}}" wx:key="{{index}}">
+    <button type='primary' wx:for="{{sort.getTerms(terms)}}" wx:key="{{index}}">
       {{item}}
     </button>
   </view>

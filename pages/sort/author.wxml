@@ -1,2 +1,4 @@
 <!--pages/sort/author.wxml-->
-<text>pages/sort/author.wxml</text>
+<view class='container'>
+  <text>{{author}}</text>
+</view>

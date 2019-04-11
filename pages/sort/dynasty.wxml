@@ -1,4 +1,4 @@
 <!--pages/sort/dynasty.wxml-->
 <view class='container'>
-111
+  <text>{{dynasty}}</text>
 </view>
