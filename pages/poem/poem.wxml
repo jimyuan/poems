@@ -1,2 +1,4 @@
 <!--pages/poem/poem.wxml-->
-<text>pages/poem/poem.wxml</text>
+<view class='contaier'>
+  <poem data="{{poem}}"></poem>
+</view>

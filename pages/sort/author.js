@@ -1,25 +1,28 @@
 // pages/sort/author.js
 const app = getApp()
+const { getCount } = require('../../utils/sortCount.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    author: Array.from(new Set(app.globalData.poems.map(item => item[3])))
+    author: getCount(app.globalData.poems.map(item => item[3]))
+  },
+
+  goList(evt) {
+    const author = evt.currentTarget.dataset.author
+    wx.navigateTo({
+      url: `../index/list?author=${author}`,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onLoad (options) {
+    this.setData({
+      orders: Object.keys(this.data.author)
+    })
   }
 })

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "poem": "/component/poem/index"
+  },
+  "navigationBarTitleText": "诗词内容"
 }

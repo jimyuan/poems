@@ -1,0 +1,16 @@
+/* index/poem/list.wxss */
+
+.poem-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.poem-title {
+  color: #19537D;
+}
+
+.sub-info {
+  color: #aaa;
+  text-shadow: 2rpx 2rpx #fff;
+}

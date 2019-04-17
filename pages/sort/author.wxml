@@ -1,4 +1,6 @@
 <!--pages/sort/author.wxml-->
 <view class='container'>
-  <text>{{author}}</text>
+  <text wx:for="{{orders}}" wx:key="{{index}}" bindtap='goList' data-author='{{item}}'>
+    {{item}} ({{author[item]}})
+  </text>
 </view>

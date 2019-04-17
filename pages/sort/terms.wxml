@@ -1,19 +1,19 @@
 <!--pages/sort/terms.wxml-->
 <wxs module="sort">
-  var getTerms = function (terms) {
-    var grade = ['一', '二', '三', '四', '五']
-    var term = ['上', '下']
-    return terms.map(function(item, idx){
-      return grade[idx / 2 | 0] + '年级' + term[idx & 1]
-    })
-  }
-  module.exports.getTerms = getTerms
-</wxs>
+var info = function(termNo) {
+  var gradeArr = ['一', '二', '三', '四', '五']
+  var termArr = ['上', '下']
+  var grade = Math.round(termNo)
+  var term = Math.round((termNo - grade) * 10) - 1
 
+  return gradeArr[grade - 1] + '年级' + termArr[term]
+};
+module.exports.info = info;
+</wxs>
 <view class='container'>
   <view class='btn-group'>
-    <button type='primary' wx:for="{{sort.getTerms(terms)}}" wx:key="{{index}}">
-      {{item}}
+    <button type='primary' wx:for='{{orders}}' wx:key='{{index}}' bindtap='goList' data-terms="{{item}}">
+      {{sort.info(item)}} ({{terms[item]}})
     </button>
   </view>
 </view>

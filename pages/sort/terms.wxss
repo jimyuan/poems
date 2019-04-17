@@ -9,5 +9,6 @@
 button {
   display: inline-block;
   width: 40%;
-  margin-top: 1em;
+  margin-top: 2em;
+  font-size: 28rpx;
 }

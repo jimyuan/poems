@@ -1,4 +1,8 @@
 <!--pages/sort/dynasty.wxml-->
 <view class='container'>
-  <text>{{dynasty}}</text>
+  <view class='btn-group'>
+    <button type='primary' wx:for='{{orders}}' wx:key='{{index}}' data-dynasty='{{item}}' bindtap='goList'>
+      {{item}} ({{dynasty[item]}})
+    </button>
+  </view>
 </view>

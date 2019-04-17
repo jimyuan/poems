@@ -4,25 +4,35 @@
     "pages/sort/terms",
     "pages/sort/dynasty",
     "pages/sort/author",
-    "pages/poem/poem"
+    "pages/poem/poem",
+    "pages/index/list"
   ],
   "tabBar": {
+    "selectedColor": "#1296db",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-selected.png"
       },
       {
         "pagePath": "pages/sort/terms",
-        "text": "年级"
+        "text": "年级",
+        "iconPath": "icons/terms.png",
+        "selectedIconPath": "icons/terms-selected.png"
       },
       {
         "pagePath": "pages/sort/dynasty",
-        "text": "朝代"
+        "text": "朝代",
+        "iconPath": "icons/dynasty.png",
+        "selectedIconPath": "icons/dynasty-selected.png"
       },
       {
         "pagePath": "pages/sort/author",
-        "text": "作者"
+        "text": "作者",
+        "iconPath": "icons/author.png",
+        "selectedIconPath": "icons/author-selected.png"
       }
     ]
   },

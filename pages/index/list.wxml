@@ -1,0 +1,7 @@
+<!--index/poem/list.wxml-->
+<view class='container'>
+  <view wx:for='{{poemsArr}}' wx:key="{{index}}" class='poem-list' data-poem='{{item}}' bindtap='goPoem'>
+    <text class="poem-title">{{index+1}}. {{item[1]}}</text>
+    <text class="sub-info">({{item[2]}} - {{item[3]}})</text>
+  </view>
+</view>
