@@ -6,6 +6,12 @@ const poemDB = app.globalData.poems.sort((a, b) => {
 })
 
 Page({
+  onShareAppMessage() {
+    return {
+      title: '小学生诗词库',
+      path: '/pages/index/index'
+    }
+  },
   data: {
     num: 0,
     poem: []
